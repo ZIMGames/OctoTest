@@ -1,0 +1,8 @@
+; English <en> to Russian <ru> localization document for `Script` managed text document
+
+T_Greeting1: Приветик!
+T_Greeting2: Привет!
+T_Greeting3: Хай)
+T_LocationDescr1: Лучшая комната в школе.
+T_LocationDescr2: На улице очень много людей.
+T_LocationDescr3: А где учительница?!

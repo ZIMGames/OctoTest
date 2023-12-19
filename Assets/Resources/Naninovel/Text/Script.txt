@@ -1,0 +1,6 @@
+T_Greeting1: Hey!
+T_Greeting2: Hi!
+T_Greeting3: Hello!!!
+T_LocationDescr1: The best place in school.
+T_LocationDescr2: There are so many people around here.
+T_LocationDescr3: Where is teacher!

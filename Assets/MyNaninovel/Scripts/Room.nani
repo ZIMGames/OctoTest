@@ -1,0 +1,24 @@
+@back ClassRoom
+
+@if findScissors
+
+    @choice  button:MapButtons/MapChoiceButton pos:-800,-400 handler:ButtonArea goto:MapScript
+    @choice  button:MapButtons/BandanaButton pos:600,-400 handler:ButtonArea goto:.FindScissors
+
+    @char Player.Thinking
+    Player.Thinking: Where's this scissors? [i] Help me to find it!
+
+@else
+
+    There's no quests here yet[i] LESS GO BACK![skipInput]
+    @goto MapScript
+    
+@endif
+
+@stop
+
+# FindScissors
+@sfx QuestSFX
+@toast "Find Scissors: Completed!" time:2
+@set findScissors=false;roomAvailable=false;talkToMyself=true
+@goto MapScript

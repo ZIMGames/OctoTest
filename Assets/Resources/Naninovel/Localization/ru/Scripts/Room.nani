@@ -1,0 +1,19 @@
+; English <en> to Russian <ru> localization document for `Room` naninovel script
+
+# 788c34e5
+;     @choice  button:MapButtons/MapChoiceButton pos:-800,-400 handler:ButtonArea goto:MapScript
+
+# 7a84d545
+;     @choice  button:MapButtons/BandanaButton pos:600,-400 handler:ButtonArea goto:.FindScissors
+
+# 79d616a0
+;     Player.Thinking: Where's this scissors? [i] Help me to find it!
+Player.Thinking: Где эти ножницы? [i] Помоги мне их найти!
+
+# e168d99d
+;     There's no quests here yet[i] LESS GO BACK![skipInput]
+На этой локации пока нет заданий по квесту[i] ПОЙДЕМ НАЗАД![skipInput]
+
+# 31fb75a5
+; @toast "Find Scissors: Completed!" time:2
+@toast "Найти Ножницы: Выполнено!" time:2

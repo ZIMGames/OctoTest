@@ -1,0 +1,342 @@
+; English <en> to Russian <ru> localization document for `Street` naninovel script
+
+# f4c8a666
+;     @input PlayerName summary:"Choose your name."
+@input PlayerName summary:"Введи свое имя."
+
+# 788c34e5
+;     @choice  button:MapButtons/MapChoiceButton pos:-800,-400 handler:ButtonArea goto:MapScript
+
+# 4a9d673b
+;             Player.Default: Hi, Michico, how are you!
+Player.Default: Привет, Мичихо, как ты?!
+
+# 7d28313a
+;             Michico: Hi, {PlayerName}
+Michico: Приветик, {PlayerName} 
+
+# 11c6f61d
+;             Michico.Crying: Did you see Asami, I miss she:()
+Michico.Crying: Ты не видела Асами, я не могу её найти:()
+
+# bcadd84f
+;     @toast "Find Asami"
+@toast "Найти Асами"
+
+# f0f2282
+;             Player.Default: I saw she in Library, hold on...[skipInput]
+Player.Default: Я видел её в библиотеке, жди здесь...[skipInput]
+
+# 788c34e5
+;     @choice  button:MapButtons/MapChoiceButton pos:-800,-400 handler:ButtonArea goto:MapScript
+
+# ae3ba2
+;     @toast "Go back to Michico: Completed" time:2
+@toast "Вернуться к Мичихо: Выполнено" time:2
+
+# 7f92422e
+;             Player.Default: Michico, I met Asami but he...
+Player.Default: Мичихо, я нашёл Асами но...
+
+# 59cd6f85
+;             Player.Thinking: Стой, почему ты здесь?
+Player.Thinking: Stop, why is she there?
+
+# 45353cc1
+;             Asami.Crying: It's none of your business.
+Asami.Crying: Не твоё дело.
+
+# bd3f2b0f
+;             Player.Default: I found scissors and wanted to pass it to you
+Player.Default: Я нашёл ножницы и хотел отдать их тебе
+
+# 96494d11
+;             Michico.Crying: No, {PlayerName}, if you love me than pass me her scissors
+Michico.Crying: Нет, {PlayerName}, отдай их мне, если ты меня любишь
+
+# 69cdc6f9
+;             Asami.Default: Don't listen to her. It's my scissors.
+Asami.Default: Не слушай её. Это мои ножницы.
+
+# 78137ff5
+;             Asami.Crying: Give me it back, idiot.
+Asami.Crying: Отдай их мне, подлец.
+
+# 3f15586d
+;     @toast "Pass Scissors"
+@toast "Отдать Ножницы"
+
+# c074a358
+;     @choice "Leave item" goto:.PlayerChoice
+
+# 1a908f21
+;     @choice "Give scissors to Michico" goto:.MichicoChoice
+
+# ea1c515
+;     @choice "Give scissors to Asami" goto:.AsamiChoice
+
+# 788c34e5
+;     @choice  button:MapButtons/MapChoiceButton pos:-800,-400 handler:ButtonArea goto:MapScript
+
+# 32edc00c
+;         Michico.Naked: Hi!
+Michico.Naked: Приветик!
+
+# 76ce2f8c
+;         Michico.Naked: Want play with me?!
+Michico.Naked: Хочешь поиграть со мной?!
+
+# e7b08e9e
+;         Michico.Naked: Hi.
+Michico.Default: Привет.
+
+# e168d99d
+;     There's no quests here yet[i] LESS GO BACK![skipInput]
+На этой локации пока нет заданий по квест[i] ПОЙДЕМ НАЗАД![skipInput]
+
+# cf02ea95
+; @toast "Quest Completed"
+@toast "КВЕСТ ВЫПОЛНЕН"
+
+# c7399023
+;         Player: Look, I have new scissors!
+Player: Ты только посмотри, у меня новые ножницы!
+
+# 36f4873d
+;         Michico.Crying: Well, you now look way more ugly.
+Michico.Crying: Круто, теперь ты упал в моих глазах.
+
+# 3e43d143
+;         Michico.Crying: Go away!
+Michico.Crying: Убирайся!
+
+# dc6a7728
+;         Player: Asami, hi again, I wanted to say...
+Player: Асами, снова привет, Я хотел сказать...
+
+# 7460a8fd
+;         Asami.Crying: You got my scissors, and i dont want see you!!!
+Asami.Crying: Ты забрал мои ножницы, я не хочу тебя видеть!!!
+
+# cf02ea95
+; @toast "Quest Completed"
+@toast "КВЕСТ ВЫПОЛНЕН"
+
+# 98c023e
+;         Player: I wish I could leave this scissors for Asami.
+Player: Я думаю что поступил неправильно. Я должен отдать ножницы Асами.
+
+# afe6632c
+;         Michico.Default: Never mind. [i] You did the right thing!
+Michico.Default: Не выдумывай. [i] Ты сделал правильный выбор!
+
+# e5667d40
+;         Michico.Default: So, you can take me, as reward!
+Michico.Default: Нууу, зато теперь ты можешь получить свою награду!
+
+# c7337727
+;         Michico.Default: Come with me, honey!
+Michico.Default: Иди за мной, любимый!
+
+# 37318ffe
+;         Michico.Naked: I like you.
+Michico.Naked: Ты мне нравишься.
+
+# 7d505b8f
+;         Michico.Naked: Do this right now!
+Michico.Naked: Давай сделаем это прямо сейчас!
+
+# 3fb082d7
+;         Player.Love: I have things to do...
+Player.Love: Извини у меня сейчас дела...
+
+# 2c5f3726
+;         Player.Love: But i back to you as fast as i can! 
+Player.Love: Но я обязательно вернусь. И сделаю это как можно скорее!   
+
+# 15d779d4
+;         Michico.Naked: I wait you, my boy!
+Michico.Naked: Я жду тебя, мой господин!
+
+# 80e260fd
+;         Player.Default: Asami!!!
+Player.Default: Асами!!!
+
+# e11cb97a
+;         Player.Default: Are you here?!
+Player.Default: Ты здесь?!
+
+# 3314f100
+;         Asami.Crying: Yes...
+Asami.Crying: Да...
+
+# dda0179c
+;         Player.Default: Sorry, but...
+Player.Default: Извини, но...
+
+# ba0f1a13
+;         Asami.Default: I understand why you give scissors to Michico...
+Asami.Default: Я понимаю почему ты отдал ножницы Мичихо...
+
+# 3bc818c4
+;         Asami.Crying: You don't like me?
+Asami.Crying: Я тебе не нравлюсь?
+
+# a11060ea
+;         Player.Default: No..
+Player.Default: Нет..
+
+# c7090d91
+;         Player.Default: I like you, but i'm was so confused when you missing!
+Player.Default: Ты мне нравишься, но я немного в замешательстве когда ты просто пропала!
+
+# af46ac2d
+;         Player.Default: And because...
+Player.Default: И поэтому...
+
+# fc36b987
+;         Asami.Default: Sorry..
+Asami.Default: Прости..
+
+# 3f043e38
+;         Asami.Default: What should I do to make you forgive me?
+Asami.Default: Что мне сделать чтобы ты простил меня?
+
+# dc920d45
+;         Player.Thinking: ...
+Player.Thinking: ...
+
+# 9100de83
+;         Player.Default: I think you know how.
+Player.Default: Я думаю ты знаешь.
+
+# 3efe431c
+;         Asami.Naked: Now better?
+Asami.Naked: Теперь лучше?
+
+# afd17be6
+;         Player.Love: Sure!!
+Player.Love: Конечно!!
+
+# d09a9288
+;         Player.Love: Can i touch you?
+Player.Love: Можно я их потрогаю?
+
+# 37eb8c79
+;         Asami.Naked: Not just touch..
+Asami.Naked: Не только их..
+
+# 63a587a2
+;         Asami.Naked: You can do all what you want..
+Asami.Naked: Ты можешь сделать со ной всё что захочешь..
+
+# cf02ea95
+; @toast "Quest Completed"
+@toast "КВЕСТ ВЫПОЛНЕН"
+
+# e91f1f6c
+;         Player: I wish I could leave this scissors for Michico.
+Player: Я думаю что поступил неправильно. Я должен отдать ножницы Мичихо.
+
+# 7abf9e7e
+;         Asami.Default: Never mind. [i] You did the right thing!
+Asami.Default: Не выдумывай. [i] Ты сделал правильный выбор!
+
+# c6744cb8
+;         Asami.Default: So, you can take me, as reward!
+Asami.Default: Нууу, зато теперь ты можешь получить свою награду!
+
+# b6d601a8
+;         Asami.Default: Come with me, honey!
+Asami.Default: Пошли за мной, сладкий!
+
+# 448ea9da
+;         Asami.Naked: I like you.
+Asami.Naked: Ты мне нравишься.
+
+# c7e714ae
+;         Asami.Naked: Do this right now!
+Asami.Naked: Давай сделаем это прямо сейчас!
+
+# 3fb082d7
+;         Player.Love: I have things to do...
+Player.Love: Меня ждут дела...
+
+# 2c5f3726
+;         Player.Love: But i back to you as fast as i can!
+Player.Love: Но я вернусь. Так быстро как только смогу!   
+
+# 86e9a303
+;         Asami.Naked: I wait you, my boy!
+Asami.Naked: Я жду тебя мой малыш!
+
+# 72c5e98
+;         Player.Default: Michico!!!
+Player.Default: Мичихо!!!
+
+# e11cb97a
+;         Player.Default: Are you here?!
+Player.Default: Ты здесь?!
+
+# ac22af81
+;         Michico.Crying: Yes...
+Michico.Crying: Да...
+
+# dda0179c
+;         Player.Default: Sorry, but...
+Player.Default: Извини, но...
+
+# 79efb3b1
+;         Michico.Default: I understand why you give scissors to Asami...
+Michico.Default: Я понимаю почему ты отдал ножницы Асами...
+
+# 5fc58a2e
+;         Michico.Crying: You don't like me?
+Michico.Crying: Я тебе не нравлюсь?
+
+# a11060ea
+;         Player.Default: No..
+Player.Default: Нет..
+
+# c7090d91
+;         Player.Default: I like you, but i'm was so confused when you missing!
+Player.Default: Ты нравишься мне, но я был встревожен тем что ты ушла!
+
+# af46ac2d
+;         Player.Default: And because...
+Player.Default: И поэтому...
+
+# 4355ec0d
+;         Michico.Default: Sorry..
+Michico.Default: Извини..
+
+# 6aca9a35
+;         Michico.Default: What should I do to make you forgive me?
+Michico.Default: Что мне сделать чтобы ты простил меня?
+
+# dc920d45
+;         Player.Thinking: ...
+
+# 9100de83
+;         Player.Default: I think you know how.
+Player.Default: Мы оба знаем что.
+
+# 3f6e1366
+;         Michico.Naked: Now better?
+Michico.Naked: Так нравится?
+
+# afd17be6
+;         Player.Love: Sure!!
+Player.Love: Конечно!!
+
+# d09a9288
+;         Player.Love: Can i touch you?
+Player.Love: Могу я к тебе прикоснуться?
+
+# 142820b
+;         Michico.Naked: Not just touch..
+Michico.Naked: Не только прикоснуться..
+
+# b45a9247
+;         Michico.Naked: You can do all what you want..
+Michico.Naked: Ты можешь сделать всё что захочешь..

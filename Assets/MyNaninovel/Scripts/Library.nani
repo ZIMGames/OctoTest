@@ -1,0 +1,82 @@
+@back LibraryBack
+
+@if findAsami
+
+    @char Asami
+    @char Player
+    @choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+    Player: Hi, Asami! [i] [sfx QuestSFX][toast "Find Asami: Completed" time:2 ] How are you?!
+    @bgm HiSound wait:false volume:0.5 loop:false
+    Asami.Crying: Hi...
+    Player: Michico is searching for you!
+    Asami.Crying: And I'm searching for a way to pass this impossible game
+        @sfx QuestSFX
+        @toast "Help Asami"
+    Asami.Default: Can you help me, {PlayerName}?
+    Player: Of Course!
+
+    ;@loadScene MiniGame additive:true
+    @hideUI ContinueInputUI
+    @adventure
+    @stop
+
+@elseif talkToMyself
+
+    @char Player
+
+    @choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+    Player: I found your scissors
+    Player.Thinking: Where's Asami??
+    @sfx QuestSFX
+    @toast "Go back to Michico"
+    @set talkToMyself=false;backToMichico=true
+    @goto MapScript
+
+@elseif itemDelivered
+
+    @char Player
+    @choice  button:MapButtons/MapChoiceButton pos:-800,-400 handler:ButtonArea goto:MapScript
+    @bgm HiSound wait:false volume:0.5 loop:false
+
+    @if choosedAsami
+        @char Asami.Naked
+        Asami.Naked: Hi!
+        Asami.Naked: Want play with me?!
+    @else
+        @char Asami.Default
+        Asami.Default: Hi.  
+    @endif      
+
+@else
+
+    There's no quests here yet[i] LESS GO BACK![skipInput]
+    @goto MapScript
+
+@endif
+@stop
+
+# AfterGame
+@back LibraryBack
+@set enteredName=true;findAsami=true;
+
+@printer DialogueModified
+
+@char Player wait:false
+@char Asami wait:false
+
+@choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+@showUI ContinueInputUI
+    @sfx QuestSFX
+    @toast "Help Asami: Completed!" time:2
+
+@back LibraryBack
+Asami.Default: Thank you, honey!
+Asami.Default: Go to classroom and bring me my scissors, my bra is very tight. I want to cut it off!
+    @sfx QuestSFX
+    @toast "Find Scissors"
+
+@set findAsami=false;findScissors=true
+@stop

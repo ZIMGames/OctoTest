@@ -1,0 +1,282 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06386b10f29c770408fc88b031c4d7fd, type: 3}
+  m_Name: EditorResources
+  m_EditorClassIdentifier: 
+  resourceCategories:
+  - Id: TextPrinters/6a221fe8-2a5b-4d2d-8fcc-9ffcf58ac5c8
+    Resources:
+    - name: Dialogue
+      pathPrefix: TextPrinters
+      guid: 1bc08ccd31adff6439e97161aa6e1d8b
+  - Id: TextPrinters/6e0692a2-2c83-4488-b887-610a5a8b0d20
+    Resources:
+    - name: Fullscreen
+      pathPrefix: TextPrinters
+      guid: c87cebd3f0d4f174789cd351ce9591c4
+  - Id: TextPrinters/cf19cc89-b872-4d67-84c7-ee9ef8c719e2
+    Resources:
+    - name: Wide
+      pathPrefix: TextPrinters
+      guid: 781828b806deb1e4cbf50ef9de41da10
+  - Id: TextPrinters/54573dd9-afbb-4b5e-b1b2-8d879c47ea28
+    Resources:
+    - name: Chat
+      pathPrefix: TextPrinters
+      guid: 0126b92e4ff0f564aaa7a38eae3ef6e7
+  - Id: TextPrinters/b8b211cf-2d33-4a94-90e1-91b240646cd1
+    Resources:
+    - name: Bubble
+      pathPrefix: TextPrinters
+      guid: b47d9659b2be5ee4e95a776f213c9d4b
+  - Id: TextPrinters/aa39537a-4885-432a-bf31-a1bbff5fcd4f
+    Resources:
+    - name: TMProDialogue
+      pathPrefix: TextPrinters
+      guid: 5838611042eaced44954639c4ea4d81e
+  - Id: TextPrinters/eced0416-fdd7-436c-8c45-cc59bb115ac7
+    Resources:
+    - name: TMProFullscreen
+      pathPrefix: TextPrinters
+      guid: a2aaa417785eeca409e78c404f333ee5
+  - Id: TextPrinters/7650a2ce-bed0-4d60-8c44-80ca30c60cba
+    Resources:
+    - name: TMProWide
+      pathPrefix: TextPrinters
+      guid: 7860ef40eae6a3341be02586f7edd980
+  - Id: TextPrinters/4fb36269-3be8-488f-8ccb-19cb4a815393
+    Resources:
+    - name: TMProChat
+      pathPrefix: TextPrinters
+      guid: 6f9836a3c4f777741b1962979d97e485
+  - Id: TextPrinters/d8a14e70-3e50-466a-878f-edfe5ac5d451
+    Resources:
+    - name: TMProBubble
+      pathPrefix: TextPrinters
+      guid: 18cfa78b5fc89b745ba69d51a6a8629a
+  - Id: ChoiceHandlers/be44e84a-48b1-434d-8417-1c5d804ba6d5
+    Resources:
+    - name: ButtonList
+      pathPrefix: ChoiceHandlers
+      guid: 1f6aa29000e839c409e6a9c0704adc96
+  - Id: ChoiceHandlers/143b56b1-75a9-4553-b1d7-624e78bace89
+    Resources:
+    - name: ButtonArea
+      pathPrefix: ChoiceHandlers
+      guid: 4fa6d62f894ae6e4698bfa8af59e7942
+  - Id: ChoiceHandlers/a73de094-5986-4d61-8d7a-196463677ce5
+    Resources:
+    - name: ChatReply
+      pathPrefix: ChoiceHandlers
+      guid: 0e61df696cabbea448510879ee732b00
+  - Id: Spawn
+    Resources:
+    - name: Animate
+      pathPrefix: Spawn
+      guid: 7bf06fa813bb9c34daf521998fa72ab1
+    - name: DepthOfField
+      pathPrefix: Spawn
+      guid: ea76638b26a915946b62907dd1e776fd
+    - name: DigitalGlitch
+      pathPrefix: Spawn
+      guid: be75a73ecccb90b4caa5c14edb9ac467
+    - name: Rain
+      pathPrefix: Spawn
+      guid: a9117e2fa90704d45b3e1461596c11ee
+    - name: ShakeBackground
+      pathPrefix: Spawn
+      guid: 9f56c556ba32fd54fae62347c25a8145
+    - name: ShakeCamera
+      pathPrefix: Spawn
+      guid: 1c5b86cf3cfbb1f44ae5641699077da4
+    - name: ShakeCharacter
+      pathPrefix: Spawn
+      guid: 1224d69e1592d624cbde93d0f7383d91
+    - name: ShakePrinter
+      pathPrefix: Spawn
+      guid: 2795040988e866646801c80024c50be1
+    - name: Snow
+      pathPrefix: Spawn
+      guid: 9f4e71cb27fffa04486737d2cf8d622d
+    - name: SunShafts
+      pathPrefix: Spawn
+      guid: c4bf810b9b6cc9f44a58fd670678ded4
+    - name: Blur
+      pathPrefix: Spawn
+      guid: e466d9326b30a4b49a3dad428b4d9968
+  - Id: UI
+    Resources:
+    - name: ClickThroughPanel
+      pathPrefix: UI
+      guid: 702c32b2de0c0784b9a66ec90601874f
+    - name: BacklogUI
+      pathPrefix: UI
+      guid: 7fba909c66b25324cb77db18679c2c96
+    - name: CGGalleryUI
+      pathPrefix: UI
+      guid: 71da50c8dae82bd42ba67528804e820c
+    - name: ConfirmationUI
+      pathPrefix: UI
+      guid: 88d03f19bcbff914ba33a7c9895e2d7c
+    - name: ContinueInputUI
+      pathPrefix: UI
+      guid: 1add671f8348e8443bcc56290e82fc5e
+    - name: ExternalScriptsUI
+      pathPrefix: UI
+      guid: 671ceb4f549ddf046913d7debf113469
+    - name: LoadingUI
+      pathPrefix: UI
+      guid: 53aad00e5cf184e458adb001c550518a
+    - name: MovieUI
+      pathPrefix: UI
+      guid: f9a211517d1cb1a44964dc2254463049
+    - name: RollbackUI
+      pathPrefix: UI
+      guid: a32c73a3aff4b274c85b3ff16c854b07
+    - name: SaveLoadUI
+      pathPrefix: UI
+      guid: 8d53726b3d08433479398f02b4780e7f
+    - name: SceneTransitionUI
+      pathPrefix: UI
+      guid: e3b234b4273b7f64ab3f1d9fe425ed23
+    - name: SettingsUI
+      pathPrefix: UI
+      guid: 65c37f59e9b266f468dd5381fdc03fc3
+    - name: TipsUI
+      pathPrefix: UI
+      guid: f5aae572225ee1b4c96d1a17fc5cb073
+    - name: TitleUI
+      pathPrefix: UI
+      guid: 503f93b9b9be1b24fae15201ced708be
+    - name: VariableInputUI
+      pathPrefix: UI
+      guid: 286d59bc436c6fe4d968f79188eeab4d
+    - name: PauseUI
+      pathPrefix: UI
+      guid: 480f5db62ea305c46b89a86496d2a0c9
+    - name: ToastUI
+      pathPrefix: UI
+      guid: 603194cc147332344955ee91acf2e651
+    - name: Map
+      pathPrefix: UI
+      guid: e87f06800aa3a25429823bfc72f270db
+  - Id: Scripts
+    Resources:
+    - name: Title
+      pathPrefix: Scripts
+      guid: 58456f4437baaa7429bc78e230110485
+    - name: MapScript
+      pathPrefix: Scripts
+      guid: b9a8950c0eead6741b304120ae159cdd
+    - name: Library
+      pathPrefix: Scripts
+      guid: 40bdeed928984f449b4fd1c845fd3495
+    - name: Street
+      pathPrefix: Scripts
+      guid: 498e034628c25734cb49442d41ea925a
+    - name: Room
+      pathPrefix: Scripts
+      guid: abbdb9b2cfd29c6468240a2f9b06219c
+  - Id: Backgrounds/c5b06670-c70a-4a90-9266-6aec233ba3d1
+    Resources:
+    - name: TitleBackground
+      pathPrefix: Backgrounds/MainBackground
+      guid: 691337388231f4b428d69148135a35f0
+    - name: SchoolOutside
+      pathPrefix: Backgrounds/MainBackground
+      guid: ecbf8abe7a30c7346b4b52e605b5c6fd
+    - name: LibraryBack
+      pathPrefix: Backgrounds/MainBackground
+      guid: 5a64fa718049525428451f62f939d43b
+    - name: ClassRoom
+      pathPrefix: Backgrounds/MainBackground
+      guid: 980a99c414425c44486d84165da01984
+  - Id: Audio
+    Resources:
+    - name: NarutoTrack
+      pathPrefix: Audio
+      guid: 98334aa3060ec6d43b49dc999a2d1a51
+    - name: Jammo
+      pathPrefix: Audio
+      guid: f596aca21f8b6554eb286a7829613725
+    - name: Typewriter
+      pathPrefix: Audio
+      guid: 4760469341bafb14f8c9336c6e63408e
+    - name: QuestSFX
+      pathPrefix: Audio
+      guid: 8d4e9f5616abc9f4392ab9196e51cd6d
+    - name: HiSound
+      pathPrefix: Audio
+      guid: f75a4b7db6278724e9a1f0c6f0b6c254
+    - name: NakedGirl
+      pathPrefix: Audio
+      guid: 2afaa6e8e28783543a47ba38ea8de57a
+  - Id: Unlockables
+    Resources:
+    - name: Achievements/1
+      pathPrefix: Unlockables
+      guid: 
+    - name: Achievements/2
+      pathPrefix: Unlockables
+      guid: 
+    - name: Achievements/3
+      pathPrefix: Unlockables
+      guid: 
+    - name: Achievements/4
+      pathPrefix: Unlockables
+      guid: 
+    - name: Achievements1
+      pathPrefix: Unlockables
+      guid: 
+  - Id: TextPrinters/d7be048c-6c54-4e3e-94e8-6e2de3747c88
+    Resources:
+    - name: Tooltip
+      pathPrefix: TextPrinters
+      guid: 38b30120251d0a04b9020beae3d032ad
+  - Id: TextPrinters/20e5894e-7bec-46a4-92ac-c54a297035c9
+    Resources:
+    - name: DialogueModified
+      pathPrefix: TextPrinters
+      guid: 22bc789746c1a164a8dce0b6ed2e6b2a
+  - Id: Characters/bb1554f0-2450-4236-995b-a3173fcaed9a
+    Resources:
+    - name: Default
+      pathPrefix: Characters/Michico
+      guid: 3e9e3724e7a03c04f82a380f49a19e61
+    - name: Naked
+      pathPrefix: Characters/Michico
+      guid: abd07730a5f97dc4494741fd40574d61
+    - name: Crying
+      pathPrefix: Characters/Michico
+      guid: bfedde9dc183476499343c32c6ac0fd5
+  - Id: Characters/12b67c42-c51d-4a2d-934e-712fdf3cc527
+    Resources:
+    - name: Default
+      pathPrefix: Characters/Player
+      guid: 48214d5b1cdb142438c38bca8b1ea4cf
+    - name: Thinking
+      pathPrefix: Characters/Player
+      guid: 04b8cfafd67807f42b96dc7809a69435
+    - name: Love
+      pathPrefix: Characters/Player
+      guid: 94e66a531f5500d4f9c6805681fe229a
+  - Id: Characters/430bb2dd-4536-4400-82a3-77b0b74e9839
+    Resources:
+    - name: Default
+      pathPrefix: Characters/Asami
+      guid: f265ce8aac6449248aae94b2c620c940
+    - name: Naked
+      pathPrefix: Characters/Asami
+      guid: b178b06de9af6564ba32444411bf7d59
+    - name: Crying
+      pathPrefix: Characters/Asami
+      guid: 5de0125fbb3086f4c9eec09284c0f6e2

@@ -1,0 +1,85 @@
+; English <en> to Russian <ru> localization document for `Library` naninovel script
+
+# 9669f408
+;     @choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+# 44779ae8
+;     Player: Hi, Asami! [i] [sfx QuestSFX][toast "Find Asami: Completed" time:2 ] How are you?!
+Player: Привет, Асами! [i] [sfx QuestSFX][toast "Найти Асами: Выполнено" time:2 ] Как ты?!
+
+# cc33723b
+;     Asami.Crying: Hi...
+Asami.Crying: Привет...
+
+# aefebfc
+;     Player: Michico is searching for you!
+Player: Мичихо ищет тебя!
+
+# 8081137c
+;     Asami.Crying: And I'm searching for a way to pass this impossible game
+Asami.Crying: А я пытаюсь решить головоломку!
+
+# 1bc99d42
+;         @toast "Help Asami"
+@toast "Помочь Асами"
+
+# f78baebe
+;     Asami.Default: Can you help me, {PlayerName}?
+Asami.Default: Можешь мне помочь, {PlayerName}?
+
+# d3b0cd0d
+;     Player: Of Course!
+Player: Конечно!
+
+# 9669f408
+;     @choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+# de3b05f3
+;     Player: I found your scissors
+Player: Я нашёл твои ножницы
+
+# 44607fb3
+;     Player.Thinking: Where's Asami??
+Player.Thinking: Где Асами??
+
+# 88bff46d
+;     @toast "Go back to Michico"
+@toast "Вернуться к Мичихо"
+
+# 788c34e5
+;     @choice  button:MapButtons/MapChoiceButton pos:-800,-400 handler:ButtonArea goto:MapScript
+
+# 21fc0841
+;         Asami.Naked: Hi!
+Asami.Naked: Привет!
+
+# e189a17
+;         Asami.Naked: Want play with me?!
+Asami.Naked: Хочешь со мной поиграть?!
+
+# a05076d2
+;         Asami.Naked: Hi.
+Asami.Default: Привет.  
+
+# e168d99d
+;     There's no quests here yet[i] LESS GO BACK![skipInput]
+На этой локации нету квестов[i] Попробуй поискать в другом месте![skipInput]
+
+# 9669f408
+; @choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+# 59e4db19
+;     @toast "Help Asami: Completed!" time:2
+@toast "Помочь Асами: Выполнено!" time:2
+
+# 4ec68c6f
+; Asami.Default: Thank you, honey!
+Asami.Default: Спасибо сладкий!
+
+# 2bbf5f21
+; Asami.Default: Go to classroom and bring me my scissors, my bra is very tight. I want to cut it off!
+Asami.Default: Сходи пожалуйста в класс и принеси мне ножницы, мой лифчик мне давит. Я хочу от него избавиться!
+
+# cf884d3b
+;     @toast "Find Scissors"
+@toast "Найти Ножницы"

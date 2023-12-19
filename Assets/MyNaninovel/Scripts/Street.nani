@@ -1,0 +1,190 @@
+@back SchoolOutside
+@bgm Jammo wait:false volume:0.5 loop:true
+
+@if !enteredName
+
+    @printer DialogueModified
+
+    @input PlayerName summary:"Choose your name."
+    @stop
+
+    @choice  button:MapButtons/MapChoiceButton pos:-800,-400 handler:ButtonArea goto:MapScript
+    @set enteredName=true
+    ; @print {Random(T_Greeting1,T_Greeting2,T_Greeting3)}
+    @char Player.Default wait:false
+    @char Michico.Default wait:false
+            Player.Default: Hi, Michico, how are you!
+            @bgm HiSound wait:false volume:0.5 loop:false
+            Michico: Hi, {PlayerName} 
+            Michico.Crying: Did you see Asami, I miss she:()
+    @sfx QuestSFX
+    @set findAsami=true
+
+    @toast "Find Asami"
+            Player.Default: I saw she in Library, hold on...[skipInput]
+    @stop
+
+@elseif backToMichico
+
+    @char Player.Default wait:false
+    @char Michico wait:false
+
+    @choice  button:MapButtons/MapChoiceButton pos:-800,-400 handler:ButtonArea goto:MapScript
+
+    @sfx QuestSFX
+    @toast "Go back to Michico: Completed" time:2
+            Player.Default: Michico, I met Asami but he...
+    @char Asami.Default
+            Player.Thinking: Stop, why is she there?
+            Asami.Crying: It's none of your business.
+            Player.Default: I found scissors and wanted to pass it to you
+            Michico.Crying: No, {PlayerName}, if you love me than pass me her scissors
+            Asami.Default: Don't listen to her. It's my scissors.
+    @char Michico.Default wait:false
+            Asami.Crying: Give me it back, idiot.
+    @sfx QuestSFX
+    @toast "Pass Scissors"
+
+    @choice "Leave item" goto:.PlayerChoice
+    @choice "Give scissors to Michico" goto:.MichicoChoice
+    @choice "Give scissors to Asami" goto:.AsamiChoice
+    @stop
+
+@elseif itemDelivered
+
+    @char Player
+    @choice  button:MapButtons/MapChoiceButton pos:-800,-400 handler:ButtonArea goto:MapScript
+    @bgm HiSound wait:false volume:0.5 loop:false
+
+    @if choosedMichico
+        @char Michico.Naked
+        Michico.Naked: Hi!
+        Michico.Naked: Want play with me?!
+    @else
+        @char Michico.Default
+        Michico.Default: Hi.
+    @endif
+    @stop
+
+@else
+
+    There's no quests here yet[i] LESS GO BACK![skipInput]
+    @goto MapScript
+
+@endif
+@stop
+
+# PlayerChoice
+@hide Asami
+@set backToMichico=false
+@set itemDelivered=true
+@sfx QuestSFX
+@toast "Quest Completed"
+@back SchoolOutside
+        Player: Look, I have new scissors!
+        Michico.Crying: Well, you now look way more ugly.
+        Michico.Crying: Go away!
+@hide Michico
+
+@back LibraryBack
+@char Asami.Crying
+        Player: Asami, hi again, I wanted to say...
+        Asami.Crying: You got my scissors, and i dont want see you!!!
+@hide Asami
+@stop
+
+# MichicoChoice
+@hide Asami
+@set backToMichico=false
+@set itemDelivered=true
+@set choosedMichico=true
+@sfx QuestSFX
+@toast "Quest Completed"
+@back SchoolOutside
+        Player: I wish I could leave this scissors for Asami.
+        Michico.Default: Never mind. [i] You did the right thing!
+        Michico.Default: So, you can take me, as reward!
+        Michico.Default: Come with me, honey!
+@back LibraryBack
+@char Michico.Naked
+@bgm NakedGirl wait:false volume:0.85 loop:false
+        Michico.Naked: I like you.
+@char Player.Love
+        Michico.Naked: Do this right now!
+        Player.Love: I have things to do...
+        Player.Love: But i back to you as fast as i can!   
+        Michico.Naked: I wait you, my boy!
+@hide Michico
+
+@back ClassRoom
+@char Player.Default
+        Player.Default: Asami!!!
+        Player.Default: Are you here?!
+        Asami.Crying: Yes...
+        Player.Default: Sorry, but...
+        Asami.Default: I understand why you give scissors to Michico...
+        Asami.Crying: You don't like me?
+        Player.Default: No..
+        Player.Default: I like you, but i'm was so confused when you missing!
+        Player.Default: And because...
+        Asami.Default: Sorry..
+        Asami.Default: What should I do to make you forgive me?
+        Player.Thinking: ...
+        Player.Default: I think you know how.
+        @bgm NakedGirl wait:false volume:0.85 loop:false
+        Asami.Naked: Now better?
+        Player.Love: Sure!!
+        Player.Love: Can i touch you?
+        Asami.Naked: Not just touch..
+        Asami.Naked: You can do all what you want..
+@hide Player
+@hide Asami
+@stop
+
+# AsamiChoice
+@hide Michico
+@set backToMichico=false
+@set itemDelivered=true
+@set choosedAsami=true
+@sfx QuestSFX
+@toast "Quest Completed"
+@back SchoolOutside
+        Player: I wish I could leave this scissors for Michico.
+        Asami.Default: Never mind. [i] You did the right thing!
+        Asami.Default: So, you can take me, as reward!
+        Asami.Default: Come with me, honey!
+@back ClassRoom
+@char Asami.Naked
+        @bgm NakedGirl wait:false volume:0.85 loop:false
+        Asami.Naked: I like you.
+@char Player.Love
+        Asami.Naked: Do this right now!
+        Player.Love: I have things to do...
+        Player.Love: But i back to you as fast as i can!   
+        Asami.Naked: I wait you, my boy!
+@hide Asami
+
+@back LibraryBack
+@char Player.Default
+        Player.Default: Michico!!!
+        Player.Default: Are you here?!
+        Michico.Crying: Yes...
+        Player.Default: Sorry, but...
+        Michico.Default: I understand why you give scissors to Asami...
+        Michico.Crying: You don't like me?
+        Player.Default: No..
+        Player.Default: I like you, but i'm was so confused when you missing!
+        Player.Default: And because...
+        Michico.Default: Sorry..
+        Michico.Default: What should I do to make you forgive me?
+        Player.Thinking: ...
+        Player.Default: I think you know how.
+        @bgm NakedGirl wait:false volume:0.85 loop:false
+        Michico.Naked: Now better?
+        Player.Love: Sure!!
+        Player.Love: Can i touch you?
+        Michico.Naked: Not just touch..
+        Michico.Naked: You can do all what you want..
+@hide Player
+@hide Michico
+@stop
